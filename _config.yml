@@ -1,0 +1,12 @@
+# Site settings
+title: Erica's Tech Blog
+email: me@erica.tech
+description: > # this means to ignore newlines until "baseurl:"
+  Learn. Build. Discuss.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  esosa0
+
+# Build settings
+markdown: kramdown
