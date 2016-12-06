@@ -1,0 +1,40 @@
+<div class="widget-wrapper">
+<h3 class="widget-title">Recent Posts</h3>
+<ul>
+{% for post in site.posts limit:10 %}
+    <li><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+<div class="widget-wrapper">
+<h3 class="widget-title">Archive</h3>
+<ul>
+{% for post in site.posts %}
+    {% capture next %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+    {% if next != current %}
+        <li><a href="{{ site.baseurl }}/archive.html#{{ post.date | date: "%B%Y" }}">{{ next }}</a></li>
+        {% assign current = next %}
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+<div class="widget-wrapper">
+<h3 class="widget-title">Tags</h3>
+<ul>
+  {% if site.tags.first[0] == null %}
+    {% for tag in site.tags %}
+     <li><a href="{{ site.baseurl }}/tags.html#{{ category }}-ref">
+     {{ tag | join: "/" }} <span>{{ site.tags[category].size }}</span>
+     </a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in site.tags %}
+     <li><a href="{{ site.baseurl }}/tags.html#{{ category[0] }}-ref">
+     {{ tag[0] | join: "/" }}</span>
+     </a></li>
+    {% endfor %}
+  {% endif %}
+</ul>
+</div>

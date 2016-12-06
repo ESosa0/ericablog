@@ -1,19 +1,36 @@
 ---
 layout: default
 ---
-<div class="post">
+{% include nav2.html %}
+<div class="post-container container">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="content">
+                            {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+                            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+                            {{ content }}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <h2 class="post-subheading">{% if page.subheading %}{{page.subheading}}{% endif %} </h3>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sidebar">
+                            {% include sidebar.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<footer>
-  <p>Posted in {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-</footer>
+
+<style>
+  .post-container img {
+    max-width: 100%;
+  }
+  .post-container {
+    margin-top: 4em;
+  }
+</style>

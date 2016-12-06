@@ -1,29 +1,155 @@
 ---
 layout: default
 ---
+{% include nav.html %}
+<header class="index-header">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <div class="inner-title">    
+                <h1>Erica Sosa</h1>
+            </div>
+            <hr>
+            <div class="inner-text">
+                <p class="header-description">Full-stack web developer</p>
+            </div>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">More about me</a>
+        </div>
+    </div>
+</header>
 
-<div class="home">
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">About me</h2>
+                <hr class="light">
+                <p class="text-faded">I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some of my work below.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-lg-6 col-sm-6">
+                <a href="pairmydish.html" class="portfolio-box">
+                    <img src="images/pair_my_dish_home.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Web app
+                            </div>
+                            <div class="project-name">
+                                Pair My Dish
+                                <p> Answer a series of simple questions about what you're cooking and receive a customized wine pairing. </p>  
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+                <a href="book-searcher.html" class="portfolio-box">
+                    <img src="images/book_searcher.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Web app
+                            </div>
+                            <div class="project-name">
+                                Book Searcher
+                                <p>Search the NY Times best sellers list and see info and ratings about each book.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="images/portfolio/3.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+<!--                <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="images/portfolio/4.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="images/portfolio/5.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+            <!-- <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <img src="images/portfolio/6.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Project Name
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+    </div>
+</section>
 
-        <p>{{ post.excerpt | strip_html }} <a href="{{site.baseurl}}{{ post.url }}" title="read more" class="more">Read more</a></p>
-
-        <p><small>Posted in {% for tag in post.tags %}<a href="{{site.baseurl}}/tags/index.html#{{ tag | cgi_escape }}" title="Posts tagged  {{tag}}" rel="tag">{{tag}}</a> {% unless forloop.last %},{% endunless %} {% endfor %}</small><p>
-      
-      </li>
-
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <hr class="primary">
+                
+            </div>
+            <div class="col-lg-2 col-lg-offset-2 text-center">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:me@erica.tech">me@erica.tech</a></p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1 text-center">
+                <i class="fa fa-linkedin-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="https://www.linkedin.com/in/ericasosa">linkedin.com/in/ericasosa</a></p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1 text-center">
+                <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="https://github.com/ESosa0">github.com/esosa0</a></p>
+            </div>
+        </div>
+    </div>
+</section>
