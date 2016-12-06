@@ -23,7 +23,11 @@ layout: default
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">About me</h2>
                 <hr class="light">
-                <p class="text-faded">I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some of my work below.</p>
+                <p class="text-faded">I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some examples of my work below.</p>
+                <p>
+                    <a href="{{ site.baseurl }}/#portfolio" class="btn btn-sm portfolio-button">See my work</a>
+                    <a href="{{ site.baseurl }}/blog.html" class="btn btn-sm portfolio-button">Read my blog</a>
+                </p>
             </div>
         </div>
     </div>
@@ -32,11 +36,11 @@ layout: default
 
 
 <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
+    <div class="container-fluid portfolio-container">
         <div class="row no-gutter">
-            <div class="col-lg-6 col-sm-6">
-                <a href="pairmydish.html" class="portfolio-box">
-                    <img src="images/pair_my_dish_home.jpg" class="img-responsive" alt="">
+            <div class="col-lg-12 col-sm-12 portfolio-row">
+                <div class="portfolio-box">
+                    <img src="images/pair_my_dish_no_nav_bar.png" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -44,14 +48,18 @@ layout: default
                             </div>
                             <div class="project-name">
                                 Pair My Dish
-                                <p> Answer a series of simple questions about what you're cooking and receive a customized wine pairing. </p>  
+                                <p> Answer a series of simple questions about what you're cooking and receive a customized wine pairing. </p> 
+                                <p>
+                                    <a href="{{ site.baseurl }}/2016/05/01/pair-my-dish.html" class="btn btn-sm portfolio-button">Learn more</a>
+                                    <a href="http://pairmydish.com" class="btn portfolio-button btn-sm">Visit the site</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col-lg-6 col-sm-6">
-                <a href="book-searcher.html" class="portfolio-box">
+            <div class="col-lg-12 col-sm-12 portfolio-row">
+                <div class="portfolio-box">
                     <img src="images/book_searcher.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -61,10 +69,14 @@ layout: default
                             <div class="project-name">
                                 Book Searcher
                                 <p>Search the NY Times best sellers list and see info and ratings about each book.</p>
+                                <p>
+                                    <a href="http://booksearcher.erica.tech" class="btn btn-sm portfolio-button">Learn more</a>
+                                    <a href="http://booksearcher.erica.tech" class="btn portfolio-button btn-sm">Visit the site</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <!-- <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
@@ -153,3 +165,18 @@ layout: default
         </div>
     </div>
 </section>
+
+<style>
+    .portfolio-box {
+        max-width: 1000px;
+    }
+    .portfolio-container {
+        background-color: #222;
+    }
+    .portfolio-row {
+        margin: 3em 0;
+    }
+    .portfolio-button {
+        background-color: #fff;
+    }
+</style>
