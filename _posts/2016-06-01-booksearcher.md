@@ -7,7 +7,7 @@ excerpt: BookSearcher helps a user find popular books and check their reviews. T
 permalink: /blog/:title
 ---
 
-[![BookSearcher Image](/images/book_searcher.png)](http://booksearcher.erica.tech)
+[![BookSearcher Image](/images/book_searcher.jpg)](http://booksearcher.erica.tech)
 
 ### [Try the app!](http://booksearcher.erica.tech "BookSearcher")
 ### [See the code!](https://github.com/ESosa0/book-searcher "BookSearcher code")

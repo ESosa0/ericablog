@@ -7,7 +7,7 @@ excerpt: Pair My Dish is an app that recommends a wine pairing for the dish that
 permalink: /blog/:title
 ---
 
-[![Pair my dish image](/images/pair_my_dish_no_nav_bar.png)](http://pairmydish.com)
+[![Pair my dish image](/images/pair_my_dish_no_nav_bar.jpg)](http://pairmydish.com)
 
 ### [Try the app!](http://pairmydish.com "Pair my dish")
 ### [See the code!](https://github.com/ESosa0/pair-my-dish "Pair my dish code")
