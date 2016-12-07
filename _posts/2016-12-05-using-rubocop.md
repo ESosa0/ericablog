@@ -3,6 +3,7 @@ layout: post
 title: Using Rubocop
 author: Erica Sosa
 tags: [ruby, rails]
+permalink: /blog/:title
 ---
 
 I just had my first experience with [Rubocop](https://github.com/bbatsov/rubocop "Rubocop"). This hilariously named Ruby Gem checks your code for violations of Ruby conventions. I used two ways to check my code with Rubocop.

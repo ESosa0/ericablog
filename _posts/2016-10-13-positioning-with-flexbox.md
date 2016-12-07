@@ -3,6 +3,7 @@ layout: post
 title: Positioning with Flexbox
 author: Erica Sosa
 tags: [css, flexbox, bootstrap]
+permalink: /blog/:title
 ---
 
 I woke up this morning with an email from [Codeschool](https://www.codeschool.com "codeschool.com") announcing their new Flexbox course. I thought, "Okay, so that's what I'm doing today!" The extent of my using flexbox was a simple `display: flex`, which is a nice substitute for `display: inline-block`, but other than that, didn’t do much. Turns out, there are a ton of other properties to flexbox that make it pretty awesome. 

@@ -3,6 +3,7 @@ layout: post
 title: "Scaffolding: A Cautionary Tale"
 author: Erica Sosa
 tags: [rails, scaffolding]
+permalink: /blog/:title
 ---
 
 When I first started learning Rails, I discovered this thing called scaffolding. Scaffolding is a super short cut to creating models, controllers, tests, and views, all perfectly connected to each other, all from one command in the shell. `$rails g scaffold model_name`.

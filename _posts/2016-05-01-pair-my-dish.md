@@ -2,14 +2,15 @@
 layout: post
 title: Pair my dish
 author: Erica Sosa
-tags: [css, flexbox, bootstrap]
+tags: [ruby, rails, css, bootstrap]
 excerpt: Pair My Dish is an app that recommends a wine pairing for the dish that you are cooking. The user answers a series of five simple questions and the app returns a customized wine pairing suggestion. 
+permalink: /blog/:title
 ---
 
 [![Pair my dish image](/images/pair_my_dish_no_nav_bar.png)](http://pairmydish.com)
 
-### [Try the app!]("http://pairmydish.com "Pair my dish")
-### [See the code!]("https://github.com/ESosa0/pair-my-dish "Pair my dish code")
+### [Try the app!](http://pairmydish.com "Pair my dish")
+### [See the code!](https://github.com/ESosa0/pair-my-dish "Pair my dish code")
          
 ### Technologies and Gems 
 

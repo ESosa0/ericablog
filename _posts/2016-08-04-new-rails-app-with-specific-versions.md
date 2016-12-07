@@ -4,6 +4,7 @@ title: How to create a new Rails app with specific Rails and Ruby versions
 subheading: And why I started taking notes…
 author: Erica Sosa
 tags: [ruby, rails, rvm, command line]
+permalink: /blog/:title
 ---
 
 Sometimes I come across a problem that I’ve already seen. Sometimes I remember how to solve it and sometimes I don’t. But when I don’t remember, I’m annoyed with myself. I think, why didn’t I take five extra minutes to write that down! So, that’s what I started to do. There are many tasks in programming that are a series of simple steps. It’s not rocket science, it’s just memorization. Write it down once and reference it forever! 

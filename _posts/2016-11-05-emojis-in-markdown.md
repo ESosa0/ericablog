@@ -3,6 +3,7 @@ layout: post
 title: Emojis in Markdown
 author: Erica Sosa
 tags: [jekyll, markdown]
+permalink: /blog/:title
 ---
 
 Emojis are such a huge part of our digital landscape. I use them everywhere from emails, to text messages, to Facebook, to… my blog? Wait, can I use them in my blog? How do I do that? 
@@ -23,6 +24,13 @@ gem 'jemoji'
 ~~~~
 
 I used [Jemoji](https://github.com/jekyll/jemoji "Jemoji"), but there are others you find as well. 
+
+Next add this to your `_config.yml`
+
+~~~
+gems:
+  - jemoji
+~~~
 
 Run `$ bundle` 
 
