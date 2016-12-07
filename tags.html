@@ -1,0 +1,37 @@
+---
+layout: post
+title: Post tags
+---
+<ul>
+  {% if site.tags.first[0] == null %}
+    {% for tag in site.tags %}
+     <li><a href="{{ site.baseurl }}/tags.html#{{ tag }}-ref">
+     {{ tag | join: "/" }} <span>{{ site.tags[tag].size }}</span>
+     </a></li>
+    {% endfor %}
+  {% else %}
+    {% for tag in site.tags %}
+     <li><a href="{{ site.baseurl }}/tags.html#{{ tag[0] }}-ref">
+     {{ tag[0] | join: "/" }}
+     </a></li>
+    {% endfor %}
+  {% endif %}
+</ul>
+
+
+{% for tag in site.tags %}
+  <h2 id="{{ tag[0] }}-ref">{{ tag[0] | join: "/" }}</h2>
+  <ul>
+  {% for node in tag[1] %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+       {% if page.url == node.url %}
+       <li class="active"><a href="{{ site.baseurl }}{{ node.url }}" class="active">{{node.title}}</a></li>
+       {% else %}
+       <li><a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a></li>
+       {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
