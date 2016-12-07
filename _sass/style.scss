@@ -1,0 +1,70 @@
+// index
+.portfolio-box {
+        max-width: 1000px;
+}
+.portfolio-container {
+    background-color: #222;
+}
+.portfolio-row {
+    margin: 3em 0;
+}
+.portfolio-button {
+    background-color: #fff;
+}
+
+.testimonial-image {
+    border-style: solid;
+    border-color: #222;
+    border-width: thin;
+    border-radius: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.portfolio-box img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+// description on blog
+.blog-description {
+    background-color: #f6f6f6;
+}
+.blog-description .erica-bw {
+    max-width: 50% !important;
+    max-width: 100%;
+    border-style: ridge;
+    border-color: #222;
+    border-width: thin;
+    border-radius: 2%;
+    margin: 2em 0;
+}
+.blog-heading {
+    text-align: center;
+}
+
+// nav bar on blog 
+.nav2 {
+background-color: #fff;
+}
+.erica-logo {
+color: #f05f40 !important;
+}
+.nav2-links a {
+color: #222 !important;
+}
+.nav2-links a:hover {
+color: #f05f40 !important;
+}
+
+//posts layout
+.post-container img {
+max-width: 100%;
+}
+.post-container {
+margin-top: 4em;
+}
+
+
+
+
