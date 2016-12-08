@@ -107,7 +107,7 @@ Used to specify original size of an element.
 Align individual items by overriding their parent value. For example, if you want one element in the div to be left-justified and the rest to be right-justified. Note: Align-items doesn’t control wrapped items.
 
 These are the main takeaways from the course. It also went over a bunch of shorthand that I won't get into here.
-I definitely recommend the codeschool course. It’s short and to the point, with practice exercises after each video. The instructor is clear and easy to follow. He recommends [Flexbox Froggy](http://flexboxfroggy.com/ "flexbox froggy") to practice, which is super fun.
+I definitely recommend the Codeschool course. It’s short and to the point, with practice exercises after each video. The instructor is clear and easy to follow. He recommends [Flexbox Froggy](http://flexboxfroggy.com/ "flexbox froggy") to practice, which is super fun.
 
 If you choose to jump into flexbox, I hope you enjoy it! I definitely do!
 

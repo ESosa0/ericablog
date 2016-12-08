@@ -60,4 +60,4 @@ You’re supposed to put a comment above each class with an explanation. I didn�
 
 ### Verdict
 
-I was not aware of most of these styling conventions. I’m still not sure if they are strange prescriptions that no one cares about or if they’re legitimate “offenses” that will bring about judgement and scorn from colleagues and peers. Either way, it’s probably best to obey Rubocop and avoid going to ruby jail.
+I was not aware of most of these styling conventions. I’m still not sure if they are strange prescriptions that no one cares about or if they’re legitimate “offenses” that will bring about judgment and scorn from colleagues and peers. Either way, it’s probably best to obey Rubocop and avoid going to ruby jail.
