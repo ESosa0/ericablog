@@ -18,13 +18,13 @@ The Codeschool course teaches the user to create everything in flexbox from scra
 
 Now I'll go over some of the cool flexbox features that I learned from the course. 
 
-#Axes 
+## Axes 
 
 First I want to say that it's important to understand the difference between the main axis vs cross axis. I'm not sure if this is a fundamental concept or not. But I had to figure it out in this course, so I'm assuming other people will be in the same situation. 
 
 If you have a row, the main axis will be horizontal and the cross-axis will be vertical. The opposite will apply to a column. If you have a column, the main axis will be vertical and the cross-axis will be vertical. Keep that in mind.
 
-#display: flex
+## display: flex
 
 `display: flex;`
 
@@ -33,7 +33,7 @@ If you add it to the parent item, all child elements will be inline. While it ch
 
 Now that you have the element set to display: flex, you can do a lot of other fun stuff.
 
-#flex-wrap
+## flex-wrap
 
 `flex-wrap: wrap;`
 
@@ -43,7 +43,7 @@ If there’s not enough space, the element will move to the next line
 
 The element moves to the second line, but displays in reverse order. I cant, for the life of me, think of a good use for this, but it’s still cool nonetheless.
 
-#flex-direction
+## flex-direction
 
 `flex-direction: column;`
 
@@ -51,7 +51,7 @@ The default flex-direction is row. This will make it a column. As mentioned abov
 
 Of course, vertical alignment is the HTML/CSS default, so you may ask why it’s useful. Well, as soon as you add a `display: flex`, you get horizontal alignment. Perhaps you want vertical alignment, but you still want to use other properties of flexbox. If you use flex-direction: column, you go back to vertical alignment, but you can still use the other coolnesses of flexbox.
 
-#justify-content
+## justify-content
 
 `justify-content: flex-start;`
 `justify-content: flex-end;`
@@ -70,37 +70,37 @@ Make content flush to the edges, with space in between. Flexbox uses an algorith
 
 Space is added around each element. This includes the edges so that content is not flush to the edges. Again, if you want to change the amount of space in between, you have to use CSS. You can’t specify the space between with flex. Though, that would be a nice addition.
 
-#order
+## order
 
 `order: -1 | 0 | 1 ;`
 
 Changes the order of elements displayed within a flexbox. The default position is 0. -1 moves items to the beginning, while 1 moves them to the end.
 
-#align-items
+## align-items
 
 `align-items: stretch | flex-start | flex-end | center | baseline;`
 
 Align-items distributes space on the cross axis. Meaning, if you’re in flex-direction: row, this is vertical alignment. If you’re in flex-direction: column, this is horizontal alignment.
 
-#flex-grow
+## flex-grow
 
 `flex-grow: 0 | 1;`
 
 Used to specify the ratio of space an item should take up in it’s main axis. It takes numbers and the default is 0. Flex-grow: 1 will take up all the space available in the container.
 
-#flex-shrink
+## flex-shrink
 
 `flex-shrink: 0 | 1;`
 
 Specifies “shrink factor” of a flex item. It accepts numbers and the default is 1, meaning do shrink. 0 means don’t shrink.
 
-#flex-basis
+## flex-basis
 
 `flex-basis: % | px | em;`
 
 Used to specify original size of an element.
 
-#align-self
+## align-self
 
 `align-self: stretch | flex-start | flex-end | center | baseline;`
 
