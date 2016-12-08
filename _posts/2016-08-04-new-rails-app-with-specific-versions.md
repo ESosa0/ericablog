@@ -11,11 +11,11 @@ Sometimes I come across a problem that I’ve already seen. Sometimes I remember
 
 I was going through the book, [Rails 4 Test Prescriptions](https://pragprog.com/book/nrtest2/rails-4-test-prescriptions "Rails 4 Test Prescriptions") and wanted to follow along with the app they create in the book. Yes, you caught me, I did say Rails 4. That means the book is not current with the latest version of Rails (which is 5 at the time of this post). In order to save myself a potential headache down the road, I decided to use the exact Ruby and Rails versions they use in the book, Rails 4.1.7 and Ruby 2.1.4. Of course, the book expects you to know how to switch between versions. Now, I had done this one other time, but I didn’t remember how I did it. Some internet research helped me and I figured it out again. But I thought, that was a silly waste of time. I should just write it down and stick it in Google Doc for next time. And that’s what I did. So here’s what I wrote in my Google Doc (with some extra explanation here and there). I hope it will helpful to you too.
 
-###Simple steps to change your Ruby and Rails versions
+## Simple steps to change your Ruby and Rails versions
 
 Make sure you have [RVM installed](https://rvm.io/rvm/install "install RVM"). Here, I will simply use Rails 4.0.0 and Ruby 2.0.0 as examples. You must change it to the versions that you need to use.
 
-####From the command line:
+### From the command line:
 
 Check if you have the Ruby version installed already. This command will show you all the versions of Ruby you already have. If the version you need is listed, skip the next step.
 
