@@ -23,7 +23,7 @@
 
 .portfolio-box img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    filter: grayscale(100%) blur(1px);
 }
 
 // description on blog

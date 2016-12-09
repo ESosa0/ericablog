@@ -45,4 +45,8 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    $(".portfolio-box-question").on('click touchstart', function() {
+        $(".portfolio-box-caption").css("opacity", "1");
+    });
+
 })(jQuery); // End of use strict
