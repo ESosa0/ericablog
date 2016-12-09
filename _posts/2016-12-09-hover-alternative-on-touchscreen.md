@@ -51,7 +51,6 @@ By default, the overlay is set to `opacity: 0;` (see line 9). On hover, the over
 </div>
 {% endhighlight %}
 
-
 ### CSS:
 
 {% highlight css linenos %}
@@ -70,19 +69,13 @@ By default, the overlay is set to `opacity: 0;` (see line 9). On hover, the over
     transition: all .35s;
 }
 
-
 .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
 }
 
 {% endhighlight %}
 
-
-
-
-
 ## Solution:
-
 
 1. Create a layer under `.portfolio-box-caption` called `.portfolio-box-question`(HTML lines 3-5). You can place it “under” by setting `z-index: 1;`
 
