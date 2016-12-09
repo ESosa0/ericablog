@@ -26,7 +26,7 @@ Looks cool on your desktop, right? But as we all know, hover effects don’t wor
 
 ## Current setup:
 
-By default, the overlay is set to `opacity: 0;` (see line 9). On hover, the overlay is set to `opacity: 1;`(see line 18). Therefore, the overlay shows on hover.
+By default, the overlay is set to `opacity: 0;` (see CSS line 9). On hover, the overlay is set to `opacity: 1;`(see CSS line 18). Therefore, the overlay shows on hover.
 
 ### HTML:
 
@@ -77,7 +77,7 @@ By default, the overlay is set to `opacity: 0;` (see line 9). On hover, the over
 
 ## Solution:
 
-1. Create a layer under `.portfolio-box-caption` called `.portfolio-box-question`(HTML lines 3-5). You can place it “under” by setting `z-index: 1;`
+1. Create a layer under `.portfolio-box-caption` called `.portfolio-box-question`(HTML lines 3-5). You can place it “under” by setting `z-index: 1;`(CSS line 24) and set `.portfolio-box-caption` to `z-index: 2;`(CSS line 14)
 
 
 2. Insert a glyphicon (HTML line 4) with a question mark to indicate to the user that there’s something that needs clicking/touching/hovering. Now this `.portfolio-box-question` is visible by default, because it sits under the `.portfolio-box-caption`, which is set to `opacity: 0;`.
