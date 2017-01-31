@@ -25,7 +25,9 @@ permalink: /
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">About me</h2>
                 <hr class="light">
-                <p class="text-faded">I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some examples of my work below.</p>
+                <p class="text-faded">
+                    I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some examples of my work below.
+                </p>
                 <p>
                     <a href="#portfolio" class="page-scroll btn btn-sm portfolio-button">See my work</a>
                     <a href="{{ site.baseurl }}/blog" class="btn btn-sm portfolio-button">Read my blog</a>
@@ -89,6 +91,47 @@ permalink: /
         </div>
     </div>
 </section>
+
+<section class="bg-primary" id="blog-feed">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Recent blogs</h2>
+            </div>
+            <div class="col-lg-4">
+                 <h3><a href="{{ site.baseurl }}{{site.posts[0].url}}">{{ site.posts[0].title }}</a></h3>
+                 <p>
+                     {{ site.posts[0].date | date: "%b %-d, %Y" }}
+                 </p>
+                 <p>
+                    {{ site.posts[0].excerpt }}
+                 </p>
+            </div>
+            <div class="col-lg-4">
+                 <h3><a href="{{ site.baseurl }}{{site.posts[1].url}}">{{ site.posts[1].title }}</a></h3>
+                 <p>
+                     {{ site.posts[1].date | date: "%b %-d, %Y" }}
+                 </p>
+                <p>
+                    {{ site.posts[1].excerpt }}
+                 </p>
+            </div>
+            <div class="col-lg-4">
+                 <h3><a href="{{ site.baseurl }}{{site.posts[2].url}}">{{ site.posts[2].title }}</a></h3>
+                 <p>
+                    {{ site.posts[2].date | date: "%b %-d, %Y" }}
+                 </p>
+                <p>
+                    {{ site.posts[2].excerpt }}
+                </p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <a href="{{ site.baseurl }}/blog" class="btn btn-lg read-my-blog text-center">Read my blog</a>
+        </div>
+    </div>
+</section>
+
 
 <section class="bg-primary" id="testimonials">
     <div class="container">
