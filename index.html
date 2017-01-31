@@ -98,40 +98,23 @@ permalink: /
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Recent blogs</h2>
             </div>
+            {% for post in site.posts limit:3 %}
             <div class="col-lg-4">
-                 <h3><a href="{{ site.baseurl }}{{site.posts[0].url}}">{{ site.posts[0].title }}</a></h3>
+                 <h3><a href="{{ site.baseurl }}{{post.url}}">{{ post.title }}</a></h3>
                  <p>
-                     {{ site.posts[0].date | date: "%b %-d, %Y" }}
+                     {{ post.date | date: "%b %-d, %Y" }}
                  </p>
                  <p>
-                    {{ site.posts[0].excerpt }}
+                    {{ post.excerpt }}
                  </p>
             </div>
-            <div class="col-lg-4">
-                 <h3><a href="{{ site.baseurl }}{{site.posts[1].url}}">{{ site.posts[1].title }}</a></h3>
-                 <p>
-                     {{ site.posts[1].date | date: "%b %-d, %Y" }}
-                 </p>
-                <p>
-                    {{ site.posts[1].excerpt }}
-                 </p>
-            </div>
-            <div class="col-lg-4">
-                 <h3><a href="{{ site.baseurl }}{{site.posts[2].url}}">{{ site.posts[2].title }}</a></h3>
-                 <p>
-                    {{ site.posts[2].date | date: "%b %-d, %Y" }}
-                 </p>
-                <p>
-                    {{ site.posts[2].excerpt }}
-                </p>
-            </div>
+            {% endfor %}
         </div>
         <div class="row text-center">
             <a href="{{ site.baseurl }}/blog" class="btn btn-lg read-my-blog text-center">Read my blog</a>
         </div>
     </div>
 </section>
-
 
 <section class="bg-primary" id="testimonials">
     <div class="container">
