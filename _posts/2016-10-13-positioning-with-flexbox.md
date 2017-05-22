@@ -6,23 +6,23 @@ tags: [css, flexbox, bootstrap]
 permalink: /blog/:title
 ---
 
-I woke up this morning with an email from [Codeschool](https://www.codeschool.com "codeschool.com") announcing their new Flexbox course. I thought, "Okay, so that's what I'm doing today!" The extent of my using flexbox was a simple `display: flex`, which is a nice substitute for `display: inline-block`, but other than that, didn’t do much. Turns out, there are a ton of other properties to flexbox that make it pretty awesome. 
+I woke up this morning with an email from [Codeschool](https://www.codeschool.com "codeschool.com") announcing their new Flexbox course. I thought, "Okay, so that's what I'm doing today!" The extent of my using flexbox was a simple `display: flex`, which is a nice substitute for `display: inline-block`, but other than that, didn’t do much. Turns out, there are a ton of other properties to flexbox that make it pretty awesome.
 
 We have all struggled with centering items, creating grids, and of course the dreaded vertical alignment. Flexbox is a solution to all of these problems. Until now, I have been using the bootstrap grid to organize my pages. My first reaction to flexbox was that it would completely replace the grid system. I thought, flexbox is simpler, more elegant, and creates cleaner HTML because you don’t need all those rows and columns. Also, the wrap property makes it very useful for responsive design.
 
-So I built something using flexbox, without the Boostrap grid. How was it? It was awesome, and easy. UNTIL... I resized my screen. Even though flexbox has that wrap property, you still have to customize your breakpoints to make it responsive. Bootstrap, of course, has that built in. I realized that I was just replacing the Bootsrap grid with another grid, one I made from scratch and spent too long building. 
+So I built something using flexbox, without the Boostrap grid. How was it? It was awesome, and easy. UNTIL... I resized my screen. Even though flexbox has that wrap property, you still have to customize your breakpoints to make it responsive. Bootstrap, of course, has that built in. I realized that I was just replacing the Bootsrap grid with another grid, one I made from scratch and spent too long building.
 
-Back to the beginning, using the Bootstrap grid. The good news is that [Bootstrap 4 uses flexbox](http://v4-alpha.getbootstrap.com/layout/flexbox-grid/ "boostrap 4 and flexbox"). What does that mean? Well, you can use the Bootstrap grid, then customize what's inside each row or column with flexbox. Best of both worlds! My favorite feature here is definitely the vertical alignment made super easy with flexbox. 
+Back to the beginning, using the Bootstrap grid. The good news is that [Bootstrap 4 uses flexbox](http://v4-alpha.getbootstrap.com/layout/flexbox-grid/ "boostrap 4 and flexbox"). What does that mean? Well, you can use the Bootstrap grid, then customize what's inside each row or column with flexbox. Best of both worlds! My favorite feature here is definitely the vertical alignment made super easy with flexbox.
 
 The Codeschool course teaches the user to create everything in flexbox from scratch. If you're using Bootstrap, you won't need to do this. But it's great to understand the principles behind flexbox so that you can customize exactly how you want.
 
-Now I'll go over some of the cool flexbox features that I learned from the course. 
+Now I'll go over some of the cool flexbox features that I learned from the course.
 
-## Axes 
+## Axes
 
-First I want to say that it's important to understand the difference between the main axis vs cross axis. I'm not sure if this is a fundamental concept or not. But I had to figure it out in this course, so I'm assuming other people will be in the same situation. 
+First I want to say that it's important to understand the difference between the main axis vs cross axis. I'm not sure if this is a fundamental concept or not. But I had to figure it out in this course, so I'm assuming other people will be in the same situation.
 
-If you have a row, the main axis will be horizontal and the cross-axis will be vertical. The opposite will apply to a column. If you have a column, the main axis will be vertical and the cross-axis will be vertical. Keep that in mind.
+If you have a row, the main axis will be horizontal and the cross-axis will be vertical. The opposite will apply to a column. If you have a column, the main axis will be vertical and the cross-axis will be horizontal. Keep that in mind.
 
 ## display: flex
 
@@ -47,7 +47,7 @@ The element moves to the second line, but displays in reverse order. I cant, for
 
 `flex-direction: column;`
 
-The default flex-direction is row. This will make it a column. As mentioned above, this changes the main axis to vertical. That means that all the elements will stack vertically. 
+The default flex-direction is row. This will make it a column. As mentioned above, this changes the main axis to vertical. That means that all the elements will stack vertically.
 
 Of course, vertical alignment is the HTML/CSS default, so you may ask why it’s useful. Well, as soon as you add a `display: flex`, you get horizontal alignment. Perhaps you want vertical alignment, but you still want to use other properties of flexbox. If you use flex-direction: column, you go back to vertical alignment, but you can still use the other coolnesses of flexbox.
 
