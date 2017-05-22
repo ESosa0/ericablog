@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Learn. Build. Discuss.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-twitter_username: 
+twitter_username:
 github_username:  esosa0
 
 
@@ -26,5 +26,8 @@ sass:
   # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
   style: compressed
 
+highlighter: pygments
+
 gems:
   - jemoji
+  - pygments.rb
