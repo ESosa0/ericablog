@@ -14,7 +14,7 @@ So that inspired our idea to soup up an old radio into a shiny new internet radi
 
 ![vintage radio for sale on ebay](/images/radio-blog/vintage-radio.png)
 
-We got this gal. Isn’t she a beauty? In some last-second bidding, she was ours for just $57.73.
+We got this gal. Isn’t she a beauty? In some last-second bidding, she was ours for just $38.73 + shipping.
 
 That was the easy part. Next we had to figure out how to make the old thing work. After some research, we found [this guide](http://www.bobrathbone.com/raspberrypi/Raspberry%20PI%20Vintage%20Radio.pdf "raspberry pi internet radio guide") which helped point us in the right direction of which hardware to use.
 
