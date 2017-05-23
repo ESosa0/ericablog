@@ -21,6 +21,15 @@
     margin-bottom: 2em;
 }
 
+#testimonials a {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: darken(#fff, 15%);
+    }
+}
+
 .portfolio-box img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%) blur(1px);
@@ -43,7 +52,7 @@
     text-align: center;
 }
 
-// nav bar on blog 
+// nav bar on blog
 .nav2 {
 background-color: #fff;
 }

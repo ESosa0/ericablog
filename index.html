@@ -26,7 +26,7 @@ permalink: /
                 <h2 class="section-heading">About me</h2>
                 <hr class="light">
                 <p class="text-faded">
-                    I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful websites. I can make a site from scratch, build a feature, or fix a bug. Check out some examples of my work below.
+                    I changed careers in 2015 to become a full-stack web developer using Ruby on Rails and JavaScript. I create functional and beautiful web apps and websites. I can build something from scratch, create a feature, or fix a bug. Check out some examples of my work below.
                 </p>
                 <p>
                     <a href="#portfolio" class="page-scroll btn btn-sm portfolio-button">See my work</a>
@@ -106,7 +106,7 @@ permalink: /
                      {{ post.date | date: "%b %-d, %Y" }}
                  </p>
                  <p>
-                    {{ post.excerpt }}
+                    {{ post.excerpt | strip_html | truncatewords:50 }}
                  </p>
             </div>
             {% endfor %}
@@ -124,7 +124,19 @@ permalink: /
                 <h2 class="section-heading">What people say about me</h2>
                 <hr class="light">
             </div>
-            <div class="col-lg-4">
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <a type="button" data-toggle="modal" data-target="#eb-testimonial-modal"><img class="img-responsive center-block testimonial-image" src="/images/erica_blair.jpg"></a>
+                <h2 class="section-heading text-center"><a href="http://erica.live/" target="blank">Erica Blair</a></h2>
+                <h4 class="text-center">Marketing and Branding Strategist</h4>
+                <hr class="light">
+                <p>
+                    I’ve hired a lot of people in my branding work over the years and I’ve found that it’s really hard to find a web developer who can do all of the detailed tech work and also make things look really beautiful. That’s why I was super excited to work with Erica because she completely smashes it out of the park in both aspects.
+                </p>
+                <a type="button" data-toggle="modal" data-target="#eb-testimonial-modal">See more</a>
+            </div>
+            <div class="col-md-4">
                 <img class="img-responsive center-block testimonial-image" src="/images/suzanne.jpg">
                 <h2 class="section-heading text-center">Suzanne Lamar</h2>
                 <h4 class="text-center">CEO at Brandtastically</h4>
@@ -132,32 +144,42 @@ permalink: /
                 <p>
                     I admit it. I had reservations about working with a developer that is on the other side of the globe. I usually enjoy meeting coworkers in person before we delve into a project. What I did not yet realize is that when you have the right individual on your team, where they are is far less important that who they are.
                 </p>
-                <p>
-
-                    Erica is a joy to work with. She is smart, well organized, and reliable. These are skills hard to find anywhere! I have enjoyed working with Erica on three different websites so far, where she has dazzled me with her technical savvy (e.g., CSS, Javascript, HTML, Bootstrap) and front-end development work.
-                </p>
-                <p>
-                    I highly recommend Erica for any web development work...and look forward to collaborating with her on future projects myself.
-                </p>
-
+                <a href="#suzanne-testimonial" data-toggle="collapse">See more</a>
+                <div id="suzanne-testimonial" class="collapse">
+                    <p>
+                        Erica is a joy to work with. She is smart, well organized, and reliable. These are skills hard to find anywhere! I have enjoyed working with Erica on three different websites so far, where she has dazzled me with her technical savvy (e.g., CSS, Javascript, HTML, Bootstrap) and front-end development work.
+                    </p>
+                    <p>
+                        I highly recommend Erica for any web development work...and look forward to collaborating with her on future projects myself.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-4">
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
                 <img class="img-responsive center-block testimonial-image" src="/images/llorenc.jpg">
                 <h2 class="section-heading text-center">Llorenç Muntaner</h2>
                 <h4 class="text-center">Developer at Lingoda GmbH</h4>
                 <hr class="light">
                 <p>
-                    I had the pleasure of mentoring Erica while she attended an intensive programming course in Barcelona. I was amazed by the pace at which she moved, in both learning and executing new technologies. By the end of the course, she ended up building the project that won the grand prize in the prestigious Barcelona Hack Show. Her perseverance and dedication were inspirational to me and to her peers. I'm confident that Erica will shine in any project or role she takes on.
+                    I had the pleasure of mentoring Erica while she attended an intensive programming course in Barcelona. I was amazed by the pace at which she moved, in both learning and executing new technologies. By the end of the course, she ended up building the project that won the grand prize in the prestigious Barcelona Hack Show.
                 </p>
-
+                <a href="#llorenc-testimonial" data-toggle="collapse">See more</a>
+                <p id="llorenc-testimonial" class="collapse">
+                    Her perseverance and dedication were inspirational to me and to her peers. I'm confident that Erica will shine in any project or role she takes on.
+                </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <img class="img-responsive center-block testimonial-image" src="/images/alberto.jpg">
                 <h2 class="section-heading text-center">Alberto Betella</h2>
                 <h4 class="text-center">CTO at Badi</h4>
                 <hr class="light">
                 <p>
-                    I met Erica during an intensive Web Development Bootcamp, where I was her instructor. Erica was able to develop a project in a very short amount of time (2 weeks) building a complex yet well organized architecture based on Ruby on Rails for the back-end and on HTML5/CSS3 + Javascript for the front-end user interface. She demonstrated to be a perseverant person and a problem solver that manages to achieve her goals within a defined time frame, always with a cheerful attitude. Her project won the final competition and was presented publicly to broad audience. I highly recommend Erica as a full-stack developer.
+                    I met Erica during an intensive Web Development Bootcamp, where I was her instructor. Erica was able to develop a project in a very short amount of time (2 weeks) building a complex yet well organized architecture based on Ruby on Rails for the back-end and on HTML5/CSS3 + Javascript for the front-end user interface.
+                </p>
+                <a href="#alberto-testimonial" data-toggle="collapse">See more</a>
+                <p id="alberto-testimonial" class="collapse">
+                    She demonstrated to be a perseverant person and a problem solver that manages to achieve her goals within a defined time frame, always with a cheerful attitude. Her project won the final competition and was presented publicly to broad audience. I highly recommend Erica as a full-stack developer.
                 </p>
             </div>
         </div>
@@ -187,6 +209,18 @@ permalink: /
         </div>
     </div>
 </section>
+
+<div id="eb-testimonial-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/218547946" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 
