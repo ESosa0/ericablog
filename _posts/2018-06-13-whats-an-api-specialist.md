@@ -3,7 +3,7 @@ layout: post
 title: What the heck is an API Specialist?
 author: Erica Sosa
 tags: []
-excerpt: I’m coming up on my 1 year mark at [Braintree](https://www.braintreepayments.com/), in the role of API Specialist. API Specialist is a bit of a nebulous title that is difficult to explain to people. A more accurate, though less succinct, description might be Integration Debugger, Data Migrator, and Internal Tool Developer.
+excerpt: I’m coming up on my 1 year mark at Braintree, in the role of API Specialist. API Specialist is a bit of a nebulous title that is difficult to explain to people. A more accurate, though less succinct, description might be Integration Debugger, Data Migrator, and Internal Tool Developer.
 permalink: /blog/:title
 ---
 
