@@ -3,7 +3,7 @@ layout: post
 title: My Vim Cheat Sheet
 author: Erica Sosa
 tags: [vim]
-excerpt: 
+excerpt: I'm moving on to a new role at Braintree and I need to learn Vim! I've been keeping notes in a notebook, but now I'd like to create an easy to reference cheat sheet, which is exactly what I'm going to do in this blog entry. So here are all the Vim commands I've learned so far, and I will add more as I learn them!
 permalink: /blog/:title
 ---
 ![Vim Adventures](/images/vim_adventures.png)
