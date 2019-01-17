@@ -1,0 +1,386 @@
+---
+layout: default
+title: Erica Sosa | Designer
+permalink: /design
+---
+{% include nav3.html %}
+<main class="container design-main">
+  <section class="row design-header">
+    <h1 class="text-center">Ballot Comparison Feature</h1>
+    <div class="col-md-6">
+      <h3 class="user-text">As a user, I want to see a comparison of candidates, so that I can decide who to vote for</h3>
+      <ol>
+        <li><a href="#whats-the-problem">What is the problem and how do we solve it?</a></li>
+        <li><a href="#user-research">User Research</a></li>
+        <li><a href="#personas-and-empathy-maps">Personas and Empathy Maps</a></li>
+        <li><a href="#user-stories">User Stories</a></li>
+        <li><a href="#user-flows">User Flows</a></li>
+        <li><a href="#mock-ups">Mock Ups</a></li>
+        <li><a href="#user-testing">User Testing</a></li>
+        <li><a href="#style-guide">Style Guide</a></li>
+        <li><a href="#prototype">Prototype</a></li>
+      </ol>
+    </div>
+    <div class="col-md-6 text-right">
+      <h3 class="handwriting">Click me, I'm a prototype!</h3>
+      <iframe width="443" height="935" src="//invis.io/J4PY69X6GMS" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="whats-the-problem">What's the problem and how do we solve it?</h2>
+      <p>
+        BallotReady creates online voter guides that help users research their ballots. I wanted to see how I could use the design process to improve the user experience of researching candidates. 
+      </p>
+      <h4>Original Problem Statement</h4>
+      <p>
+        Many BallotReady users are busy urban professionals who spend much of their time on mobile devices. The current BallotReady site is responsive, but not optimized for mobile. Additionally there are features missing, the most important being an easy comparison between candidates.
+      </p>
+      <h4>Hypothesis</h4>
+      <p>
+        Voters would use a mobile app that allows them to easily research candidates while on the go. They would also appreciate having that information stored in their app, integrated with their calendar, and able to send updates and notifications. All these features would make it easier for busy people to complete their ballots and remember to vote.
+      </p>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="user-research">User Research</h2>
+      <h3>Part 1: Screener Survey</h3>
+      <p>
+        The purpose of this survey was to identify people who “usually” or “occasionally” vote, but do not feel like they have enough information to make educated decisions.
+      </p>
+      <ol>
+        <li>
+          Do you vote in presidential election years (every 4 years)?
+          <ul>
+            <li>Always 88.89%</li>
+            <li>Sometimes 11.11%</li>
+            <li>Never 0.00%</li>
+          </ul>
+        </li>
+        <li>
+          Do you plan on voting in the next presidential election (2020)?
+          <ul>
+            <li>Yes 100.00%</li>
+            <li>No 0.00%</li>
+            <li>Not sure 0.00%</li>
+          </ul>
+        </li>
+        <li>
+          Do you vote in midterm elections (every 2 years)?
+          <ul>
+            <li>Yes 50.00%</li>
+            <li>No 38.89%</li>
+            <li>Not sure 11.11%</li>
+          </ul>
+        </li>
+        <li>
+          Do you plan on voting in the next midterm election(2018)?
+          <ul>
+            <li>Yes 83.33%</li>
+            <li>No 0.00%</li>
+            <li>Not sure 16.67%</li>
+          </ul>
+        </li>
+        <li>
+          Do you vote in local elections (e.g. mayoral, school board, etc.)?
+          <ul>
+            <li>Yes 33.33%</li>
+            <li>Usually 33.33%</li>
+            <li>Never 5.56%</li>
+          </ul>
+        </li>
+        <li>
+          Do you feel confident that you have enough information on down ballot candidates (i.e. not presidential candidates) to make an educated voting decision?
+          <ul>
+            <li>Yes 27.78%</li>
+            <li>No 50.00%</li>
+            <li>Other 22.22%
+              <ul>
+                <li>
+                  For many local races (i.e., judges), I have in the past felt very uninformed. However, that has been changing rapidly recently. Seems like twitter has facilitated a far better dissemination of knowledge about state/local politics/policy, at least in big cities, and at least among people who put some effort into being plugged-in.                </li>
+                <li>
+                  Only sometimes. It really depends on how much BallotReady or similar sites dive into each candidate. The information is usually available to me, I just typically do not prioritize reading through it enough to know who's who! My own fault. So no, but not because the information isn't available.
+                </li>
+                <li>
+                  Not always. I typically try to do a lot of research leading up to an election, and use BallotReady, but I don't always feel 100% confident in my choices.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          How do you research candidates?
+          <ul>
+            <li>Online news 94.44%</li>
+            <li>Print news 16.67%</li>
+            <li>Blogs 22.22%</li>
+            <li>Online voter guides 72.22%</li>
+            <li>Friends and family 55.56%</li>
+            <li>Television 0.00%</li>
+            <li>Ads 5.56%</li>
+            <li>Ads 5.56%</li>
+            <li>I don't do research 0.00%</li>
+            <li>Other (please specify) 16.67%
+              <ul>
+                <li>.gov websites to see how they've voted on certain bills in the past</li>
+                <li>search for radio interviews (thanks WBEZ!)</li>
+                <li>vote on party line</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <h4>Findings</h4>
+      <ul>
+        <li>Most people always vote in presidential elections and all people plan on voting in the next presidential election.</li>
+        <li>Half the people always vote in midterm elections and most plan on voting in the next midterm election.</li>
+        <li>A third of the people always vote in local elections, most sometimes vote, and 1 never votes.</li>
+        <li> A third of the candidates feel that they have enough information to vote on down ballot candidates, half do not feel that they have enough information and another third responded with “other”. The “others” expressed sometimes being confident, feeling that they could know more but haven’t done the proper research, or doing research but not feeling confident in their choices.</li>
+      </ul>
+      <p>
+        Participants used a variety of sources to research candidates. The most popular sources were online news and voter guides, friends and family, and social media. No one gets their information from television, and very few rely on ads or print news.
+      </p>
+      <p>
+        I selected 5 people from these result as potential interviewees. They all said that they don’t feel they have enough information on down ballot candidates and that they don’t always vote in 2-year or local elections.
+      </p>
+      <h3>Part 2: Interview questions:</h3>
+      <ol>
+        <li>
+          You mentioned that you don’t feel you have enough information to make an educated decision on down ballot candidates. Why don’t you have enough information? What obstacles are in your way?
+        </li>
+        <li>
+          You mentioned that you don’t always vote in local election/ midterm elections. What affects your decision on whether or not to vote?
+        </li>
+        <li>
+          When you are researching candidates, what information are you looking for?
+        </li>
+        <li>
+          You mentioned that you choose x,y,z sources for your voting research. Could you tell me some pros and cons of each one of these?
+        </li>
+        <li>Which resource do you think is the best one? Why?</li>
+        <li>Which resource do you think is the worst one? Why?</li>
+        <li>Is there any information you’re looking for that is difficult to find?</li>
+        <li>Are there ways that information could be presented better?</li>
+        <li>What do you think would help you become a more informed voter?</li>
+      </ol>
+      <h3>Step 3: Analysis</h3>
+      <p>
+        I interviewed three people and asked them the above questions. Several common themes emerged from this research. All the participants felt that they themselves were responsible for not being informed enough around down-ballot issues and candidates. They believed that the information was available, but overwhelming and difficult to synthesize. The interviewees found it difficult to know which sources of information were trustworthy, and each had a system to figure out the level of bias of the media they consumed. Most relied on trusted friends and family, with similar political orientation, to better understand the information. They all thought that if information were better curated or presented, it would help them become more educated voters.
+      </p>
+      <p>The participants had many ideas on helpful additions to information sources:</p>
+      <ul>
+        <li>Donations to candidates</li>
+        <li>Stances over time</li>
+        <li>Summary of offices’ responsibilities</li>
+        <li>How experience relates to the role they’re running for</li>
+        <li>Sources of information/data</li>
+        <li>Increased transparency to show trustworthiness</li>
+        <li>Bullet points of critical information</li>
+        <li>Pros/cons list depending on political leaning</li>
+        <li>Comparison between candidates</li>
+        <li>Other forms of delivery - mobile app/ mixed media</li>
+        <li>Regular emails that send election information to increase personal responsibility</li>
+      </ul>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="personas-and-empathy-maps">Personas and Empathy Maps</h2>
+      <p>
+        Based on the users I interviewed, I came up with a persona that was a mishmash of them all. Emily the Skeptical Millennial represents a very typical BallotReady user and also the type of user we're trying to reach.
+      <div class="row">
+        <div class="col-md-6">
+          <img src= "/images/empathy_map_personas1.png" class="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <img src= "/images/empathy_map_personas2.png" class="img-responsive">
+        </div>
+      </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="user-stories">User Stories</h2>
+      <p>
+        Based on my user research, I came up with many potential user stories. In the end, I decided to focus on the feature that I thought would provide the most value, based on the feedback I received: the comparison feature. While there were many potential features that would improve user experience, the comparison feature seemed to be the most common user request and the most straightforward tool that would help users make decisions. It also presented a unique design challenge for mobile.
+      </p>
+      {% include user_stories_table.html %}
+    </div>
+  </section>
+  <section class="row">
+    <h2 id="user-flows">User Flows</h2>
+    <p>
+      Based on the comparison user stories, I created several potential user flows for the comparison feature:
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src= "/images/user_flows/user_flows_navigating.png" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <img src= "/images/user_flows/user_flows_filtering.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src= "/images/user_flows/user_flows_removing.png" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <img src= "/images/user_flows/user_flows_adding.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src= "/images/user_flows/user_flows_saving.png" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <img src= "/images/user_flows/key.png" class="img-responsive">
+      </div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="mock-ups">Mock ups</h2>
+        <p>
+          I started planning out the comparison feature with hand-drawn sketches. Once I had a good understanding of how I wanted the feature to work, I created some basic mock ups with Balsamiq.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src= "/images/mockup_sketch1.png" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <img src= "/images/mockup_sketch2.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src= "/images/mockup_sketch3.png" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <img src= "/images/mockup_sketch4.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup1.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup2.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup3.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup4.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup5.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup6.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup7.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup8.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup9.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup10.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup11.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup12.png" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup13.png" class="img-responsive">
+      </div>
+      <div class="col-md-3">
+        <img src= "/images/mockups/BrMockup14.png" class="img-responsive">
+      </div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="user-testing">User Testing</h2>
+      <p>
+        In order to verify my design, I gathered some potential users and asked them to complete a few basic tasks. I learned a lot from watching them interact with the design.
+      </p>
+      <h3>User tasks</h3>
+        <ul>
+          <li>Identify a candidate’s position</li>
+          <li>Save a candidate to your ballot</li>
+          <li>Navigate to another stance</li>
+          <li>Upvote a candidate</li>
+          <li>Scroll between candidates</li>
+          <li>Filter candidates</li>
+        </ul>
+      <h3>Findings</h3>
+      <ul>
+        <li>Upvote downvote feature was unclear
+          <ul>
+            <li>What am I voting for?
+            <li>How many times can I vote?
+            <li>Are my votes cumulative?
+          </ul>
+        </li>
+        <li>Too many things happening on the page
+          <ul>
+            <li>The design is a bit busy and easy to touch the wrong thing
+          </ul>
+        </li>
+        <li>Horizontal scroll is unintuitive
+          <ul>
+            <li>Users are accustomed to vertical scroll
+          </ul>
+        </li>
+        <li>Stances not grouped or organized
+          <ul>
+            <li>It would be better to have topics and subtopics
+            <li>Filtering would best be done by topic, rather than subtopic</li>
+          </ul>
+        </li>
+        <li>Too many icons, not enough words
+          <ul>
+            <li>Not every icon perfectly communicates the action
+            <li>Add some words for clarity
+          </ul>
+        </li>
+      <ul>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="style-guide">Style Guide</h2>
+      <p>These colors, typefaces, button, and icons represent a consistent style for the BallotReady comparison feature. I've taken many of the styles from the existing BallotReady site and organized them into a reference document. In the final mockup I changed several elements, most notibly the icons.
+      <img src="/images/BrStyle.png", class="img-responsive">
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-md-12">
+      <h2 id="prototype">Final Prototype</h2>
+      <p>
+        Based on all my research and testing, I created the prototype.  This is the minimum viable product for the comparison feature. I look forward to improving this design until it becomes production ready. This prototype addresses the original problem of needing a convenient way to compare candidates quickly from a mobile device. There are many other features and optimizations for mobile that could be added.
+      </p>
+      <p>
+        So go ahead and take a look at the prototype, clicking on the hotspots and following the user flow!
+      </p>
+      <div class="text-center">
+        <iframe width="443" height="935" src="//invis.io/J4PY69X6GMS" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>

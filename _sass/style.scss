@@ -135,3 +135,33 @@ table {
 .image-caption {
   font-size: 1.2rem;
 }
+
+.design-header {
+  margin-top: 200px;
+  h1 {
+    margin-bottom: 100px;
+  }
+  ol {
+    font-size: x-large;
+    margin-top: 50px;
+  }
+}
+
+.user-text {
+  color: #767676;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+.design-main {
+  section.row {
+    padding-top: 0;
+  }
+  h2 {
+    font-size: 50px;
+  }
+}
+
+.handwriting {
+  font-family: 'Permanent Marker', cursive;
+}
